@@ -4,7 +4,7 @@
     "description": "Symfony Bundle of Doctrine custom functions that allowst the developer to use ->, ->> and #>> operators in DQL",
     "keywords": ["doctrine", "jsonb", "function", "operator", "bundle", "symfony", "fabianofa"],
     "homepage": "https://github.com/fabianofa/JsonbBundle",
-    "license": "GNUv3",
+    "license": "MIT",
     "authors": [
         {
             "name": "Fabiano Araujo",
