@@ -21,8 +21,8 @@ class JsonbByKey extends FunctionNode
 
     public function getSql(\Doctrine\ORM\Query\SqlWalker $sqlWalker)
     {
-        // Remove as aspas simples incluídas pela transferência do parâmetro
-        // como função.
+        // The rightHandSide argument is wrapped with single quotes. For
+        // a valid SQL syntax, these have to be removed.
         $path = str_replace("'", "", $this->path->dispatch($sqlWalker));
         $path = explode(",", $path);
         $waypoints = array_map(function ($value) {
