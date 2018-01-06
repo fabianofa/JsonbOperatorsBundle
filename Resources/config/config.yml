@@ -1,0 +1,8 @@
+# Doctrine Configuration
+doctrine:
+    orm:
+        dql:
+            string_functions:
+                jsonbbykey: fabianofa\JsonbBundle\Doctrine\Query\JsonbByKey
+                jsonbbykeytext: fabianofa\JsonbBundle\Doctrine\Query\JsonbByKeyText
+                jsonbbypath: fabianofa\JsonbBundle\Doctrine\Query\JsonbByPath

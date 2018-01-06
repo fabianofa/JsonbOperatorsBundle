@@ -1,0 +1,26 @@
+{
+    "name": "fabianofa/jsonboperators-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony Bundle of Doctrine custom functions that allowst the developer to use ->, ->> and #>> operators in DQL",
+    "keywords": ["doctrine", "jsonb", "function", "operator", "bundle", "symfony", "fabianofa"],
+    "homepage": "https://github.com/fabianofa/JsonbBundle",
+    "license": "GNUv3",
+    "authors": [
+        {
+            "name": "Fabiano Araujo",
+            "homepage": "http://fabianofa.github.io/index.html"
+        }
+    ],
+    "require": {
+        "php":                      ">=7.0",
+        "symfony/framework-bundle": "~3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "fabianofa\\JsonbOperatosBundle\\": ""
+        }
+    }
+}
