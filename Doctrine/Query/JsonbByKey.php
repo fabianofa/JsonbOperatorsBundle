@@ -4,6 +4,14 @@ namespace fabianofa\JsonbOperatorsBundle\Doctrine\Query;
 use Doctrine\ORM\Query\AST\Functions\FunctionNode;
 use Doctrine\ORM\Query\Lexer;
 
+/**
+ * jsonbbykeytext DQL function is the the equivalent SQL:
+ *
+ * jsonbcolumn->'property1'->'property2'
+ *
+ * For more information about jsonb operators, visit the official documentation:
+ * https://www.postgresql.org/docs/current/static/functions-json.html
+ */
 class JsonbByKey extends FunctionNode
 {
     public $column = null;
@@ -21,7 +29,7 @@ class JsonbByKey extends FunctionNode
 
     public function getSql(\Doctrine\ORM\Query\SqlWalker $sqlWalker)
     {
-        // The rightHandSide argument is wrapped with single quotes. For
+        // The parth argument is wrapped with single quotes. For
         // a valid SQL syntax, these have to be removed.
         $path = str_replace("'", "", $this->path->dispatch($sqlWalker));
         $path = explode(",", $path);
