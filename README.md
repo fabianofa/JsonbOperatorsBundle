@@ -1,9 +1,7 @@
-JsonbBundle
+JsonbOperatorsBundle
 ----
 
-PostgreSQL 9.4 introduced the new data type jsonb. With it some documented operators such as ->, ->> and #>>{} are available to access or retrieve values within a jsonb column data. Since Symfony uses Doctrine as default and Doctrine uses its own query language DQL, the operators aren't available natively. You can also [check]https://www.postgresql.org/docs/current/static/functions-json.html
-
-PostgreSQL documentation about json functions and operators: https://www.postgresql.org/docs/current/static/functions-json.html
+PostgreSQL 9.4 introduced the new data type jsonb. With it some documented operators such as ->, ->> and #>>{} are available to access or retrieve values within a jsonb column data. Since Symfony uses Doctrine as default and Doctrine uses its own query language DQL, the operators aren't available natively. You can also [visit PostgreSQL json function and operator documentation](https://www.postgresql.org/docs/current/static/functions-json.html) to check which operator you expect to use.
 
 This bundle adds some custom functions to allow developers to use such operators.
 
@@ -12,7 +10,6 @@ This bundle adds some custom functions to allow developers to use such operators
 3. Documentation
 4. Planned improvements
 
-============
 
 # 1. Installation
 ---------------------------
